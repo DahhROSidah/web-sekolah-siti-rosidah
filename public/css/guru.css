@@ -1,0 +1,72 @@
+/* Styling untuk halaman Guru */
+.guru-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.guru-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.guru-header h1 {
+    font-size: 2.5rem;
+    color: #0c77e2;
+    margin-bottom: 10px;
+}
+
+.guru-header p {
+    color: #04deee;
+    font-size: 1.1rem;
+}
+
+.guru-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.guru-card {
+    background: #ad1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guru-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.guru-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.guru-card-body {
+    padding: 20px;
+}
+
+.guru-card-body h3 {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.guru-card-body .mapel {
+    font-size: 0.9rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.guru-card-body p {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}

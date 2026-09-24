@@ -1,0 +1,395 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1650c4;
+    color: #b81919;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header {
+    background: #1e1cb9;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #123b73;
+}
+
+.logo img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.logo strong {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    color: #2a11b8;
+    margin-top: 3px;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1456a0;
+}
+
+
+/* =====================================================
+   HERO BERANDA
+===================================================== */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(9, 48, 95, 0.82),
+            rgba(18, 91, 160, 0.82)
+        );
+
+    color: rgb(24, 12, 192);
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+
+/* TOMBOL */
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: rgb(38, 22, 182);
+    color: #1456a0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #eaf2fb;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   SAMBUTAN KEPALA SEKOLAH
+===================================================== */
+
+.sambutan {
+    background: white;
+    padding: 80px 0;
+}
+
+.sambutan .container {
+    max-width: 950px;
+}
+
+.sambutan h2 {
+    text-align: center;
+    color: #123b73;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.sambutan p {
+    text-align: center;
+    color: #b62020;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   KEUNGGULAN SEKOLAH
+===================================================== */
+
+.keunggulan {
+    padding: 80px 0;
+    background: #f5f7fb;
+}
+
+.keunggulan h2 {
+    text-align: center;
+    color: #123b73;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.keunggulan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card {
+    background: rgb(49, 13, 209);
+    padding: 35px 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #1456a0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PROFIL SINGKAT
+===================================================== */
+
+.profil-singkat {
+    padding: 80px 0;
+    background: rgb(160, 10, 10);
+}
+
+.profil-singkat h2 {
+    text-align: center;
+    color: #123b73;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.profil-singkat p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #123b73;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+   Untuk halaman Profil, Jurusan, Galeri, dll.
+===================================================== */
+
+.page-header {
+    background: linear-gradient(
+        135deg,
+        #123b73,
+        #1976c9
+    );
+
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.page-header span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+.page-header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .keunggulan-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE HP
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .logo strong {
+        font-size: 17px;
+    }
+
+    .logo span {
+        font-size: 10px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .sambutan,
+    .keunggulan,
+    .profil-singkat {
+        padding: 55px 0;
+    }
+
+    .sambutan h2,
+    .keunggulan h2,
+    .profil-singkat h2 {
+        font-size: 26px;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+}
