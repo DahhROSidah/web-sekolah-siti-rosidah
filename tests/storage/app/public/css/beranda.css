@@ -1,0 +1,211 @@
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    list-style: none;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+    color: #2563eb;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('../images/hero-sekolah.jpg') center/cover no-repeat;
+    background-color: #1a1a2e;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    max-width: 600px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== Sambutan / About Section ===== */
+.sambutan {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sambutan h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+}
+
+.sambutan p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ===== Fitur / Keunggulan Section ===== */
+.fitur-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.fitur-section h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.fitur-card {
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.fitur-card:hover {
+    transform: translateY(-6px);
+}
+
+.fitur-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.fitur-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 13px;
+    margin-top: 60px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+
+    .navbar-menu {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+}
